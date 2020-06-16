@@ -17,12 +17,13 @@ function mostraTechs(user) {
   }
 }
 
+////////////////////////////////////////////////
+
 // Busca por tecnologia
 function checaSeUsuarioUsaCSS(usuario) {
   for (let tecnologia of usuario.tecnologias) {
     if (tecnologia == "CSS") return true;
   }
-
   return false;
 }
 
