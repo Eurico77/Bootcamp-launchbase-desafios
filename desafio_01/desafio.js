@@ -14,10 +14,13 @@ console.log(imc.toFixed(2));
 function calcularImc(nome, peso, altura) {
   const imc = peso / (altura * altura);
   if (imc >= 30) {
-    console.log(`Prezado, ${nome} você está acima do peso!`);
+    console.log(`Prezado, ${nome} você está acima do peso! Com IMC:${imc.toFixed(2)}`);
   } else if (imc < 29.9) {
-    console.log(`Prezado, ${nome} você não está acima do peso!`);
+    console.log(`Prezado, ${nome} você não está acima do peso! Seu IMC:${imc.toFixed(2)}`);
   }
 }
 
 calcularImc("Eurico", 84, 1.88);
+
+
+
