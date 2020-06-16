@@ -27,6 +27,6 @@ const programadores = {
 };
 
 console.log(`o usuario ${programadores.nome} tem ${programadores.idade}
-anos, e usa a tecnologia ${programadores.tecnologias[0].nome}
-com especialidade em ${programadores.tecnologias[0].especialidade}
+anos, e usa a tecnologia ${programadores.tecnologias[2].nome}
+com especialidade em ${programadores.tecnologias[2].especialidade}
 `);
