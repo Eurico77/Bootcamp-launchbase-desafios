@@ -9,15 +9,30 @@ const usuarios = [
   { nome: "Tuane", tecnologias: ["HTML", "Node.js"] },
 ];
 
-for( usuario of usuarios ) {
 
-  console.log(`${usuario.nome} trabalha com ${usuario.tecnologias.join(", ")}`)
+
+/*
+Fazer uma varredura no array e verifique se o usuario ttrabalha com css ou não
+
+ */
+
+function checkaTrabalhaComCss(usuario) {
+  for (let tecnologia of usuario.tecnologias) {
+    const encontrei = tecnologia === 'CSS'
+    if(encontrei){
+      return true
+    }
+  }
+  return false
+
 }
 
 
 
+for (let usuario of usuarios) {
+  const checkar = checkaTrabalhaComCss(usuario);
+  console.log(usuario.nome)
+  console.log(checkar)
+}
 
-
-
-//mostraTechs(usuarios)
 
